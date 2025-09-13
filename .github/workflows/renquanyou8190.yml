@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '46 * * * *'
-jobs:  # 18000
+jobs:  # 483
   build:
     runs-on: ubuntu-latest
     steps:
